@@ -25,3 +25,7 @@ zad.2 Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmia
 zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
     
     ls --sort=size -l
+    
+zad.4 Wyświetl zawartość pliku /etc/passwd posortowaną według numerów UID w kolejności od największego do najmniejszego.
+
+    sort -t: -k3 -nr /etc/passwd
