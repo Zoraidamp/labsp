@@ -9,9 +9,9 @@ zad. 8 Zlicz wszystkie pliki znajdujące się w katalogu /etc i jego podkataloga
     
 zad. 9 Napisać polecenie zliczające ilość znaków z pierwszych trzech linii pliku /etc/passwd.
 
-   
+    cat /etc/passwd |head -n 3 | wc -m
 
-   lab 4
+  lab 4
 zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
 
      ls|tr [:lower:] [:upper:]
