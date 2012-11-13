@@ -17,3 +17,8 @@ zad. 9 Napisać polecenie zliczające ilość znaków z pierwszych trzech linii 
 zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
 
      ls|tr [:lower:] [:upper:]
+     
+zad. 2 Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
+
+    ls -l | cut -b 1-10,28-33,48-
+    
