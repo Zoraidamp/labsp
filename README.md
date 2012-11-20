@@ -29,3 +29,9 @@ zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmia
 zad.4 Wyświetl zawartość pliku /etc/passwd posortowaną według numerów UID w kolejności od największego do najmniejszego.
 
     sort -t: -k3 -nr /etc/passwd
+    
+  lab5
+  
+zad.1 Znajdź w swoim katalogu domowym (bez podkatalogów) wszystkie pliki, które zostały zmodyfikowane w ciągu ostatnich dziesięciu dni i wyświetl ich nazwy.
+
+    find . -maxdepth 1 -type f -mtime -10
