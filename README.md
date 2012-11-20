@@ -42,10 +42,14 @@ zad.2 Znajdź wszystkie pliki zwykłe w systemie, które mają w nazwie ciąg zn
     
 zad.3 Znajdź w swoim katalogu domowym wszystkie pliki, które nie były używane w ciągu ostatnich 20 dni.
 
-    -path '*/.git/*' -prune -o -print 
+     -path '*/.git/*' -prune -o -print 
+
 lub
+
     find -mtime -20 | egrep -v '\.git'
+
 lub
+
     find . -not -iwholename '*/.git/*'
 
 
