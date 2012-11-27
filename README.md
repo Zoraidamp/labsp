@@ -83,3 +83,7 @@ na konkretnym poziomie
 zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
    
     mkdir `date +%Y-%m-%d`
+  
+lub
+
+    mkdir $(date +%Y-%m-%d)
