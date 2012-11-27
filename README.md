@@ -62,4 +62,5 @@ zad.5 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę
     rm x??
     
 zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
-       mkdir `date +%Y-%m-%d`
+   
+    mkdir `date +%Y-%m-%d`
