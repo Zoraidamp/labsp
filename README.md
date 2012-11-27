@@ -58,3 +58,8 @@ zad.4 Znajdź w katalogu /etc wszystkie niepuste podkatalogi i pliki o nazwach z
     find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/null
 
 zad.5 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę „x” i zawiera dokładnie trzy znaki.
+
+    rm x??
+    
+zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
+    mkdir `date +%Y-%m-%d`
