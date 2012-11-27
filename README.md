@@ -13,7 +13,6 @@ zad.9 Napisać polecenie zliczające ilość znaków z pierwszych trzech linii p
     cat /etc/passwd |head -n 3 | wc -m
 
  
- 
  lab 4
   
 zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
@@ -35,7 +34,11 @@ zad.4 Wyświetl zawartość pliku /etc/passwd posortowaną według numerów UID 
 lub
    
     cat /etc/passwd | sort --reverse --field-separator=":" --general-numeric-sort --key 3
-    
+
+zad.5 Wyświetl zawartość pliku /etc/passwd posortowaną najpierw według numerów GID w kolejności od największego do najmniejszego, a następnie UID.
+
+    cat /etc/passwd | sort --field-separator=":" --general-numeric-sort --key 4,3 --reverse
+
  
  
  lab5
