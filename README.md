@@ -1,4 +1,4 @@
-  labs 3
+  lab 3
   
 zad.7 Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
 
@@ -12,7 +12,9 @@ zad.9 Napisać polecenie zliczające ilość znaków z pierwszych trzech linii p
 
     cat /etc/passwd |head -n 3 | wc -m
 
-  lab 4
+ 
+ 
+ lab 4
   
 zad.1 Wyświetl listę plików z aktualnego katalogu, zamieniając wszystkie małe litery na duże.
 
@@ -34,7 +36,9 @@ lub
    
     cat /etc/passwd | sort --reverse --field-separator=":" --general-numeric-sort --key 3
     
-  lab5
+ 
+ 
+ lab5
   
 zad.1 Znajdź w swoim katalogu domowym (bez podkatalogów) wszystkie pliki, które zostały zmodyfikowane w ciągu ostatnich dziesięciu dni i wyświetl ich nazwy.
 
