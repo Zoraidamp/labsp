@@ -29,6 +29,10 @@ zad.3 Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmia
 zad.4 Wyświetl zawartość pliku /etc/passwd posortowaną według numerów UID w kolejności od największego do najmniejszego.
 
     sort -t: -k3 -nr /etc/passwd
+
+lub
+   
+    cat /etc/passwd | sort --reverse --field-separator=":" --general-numeric-sort --key 3
     
   lab5
   
