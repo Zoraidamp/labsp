@@ -75,7 +75,10 @@ zad.5 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę
 na każdym poziomie
     
     find . -name "x??" -exec rm -rf {} / 
+    
+na konkretnym poziomie    
 
+    find . -mindepth 2 -maxdepth 2 -name "x??" -delete
     
 zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie rrrr-mm-dd.
    
