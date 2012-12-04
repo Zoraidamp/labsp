@@ -87,3 +87,16 @@ zad.6 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (
 lub
 
     mkdir $(date +%Y-%m-%d)
+    
+    
+Lab 6
+
+zad.1 W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
+
+    grep . plik.txt
+    
+zad.2 Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
+
+     Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
+     
+zad.3 Znajdź pliki, zawierające wiersz w którym na 9 pozycji występuje litera r.
