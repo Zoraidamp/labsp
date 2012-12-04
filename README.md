@@ -97,7 +97,7 @@ zad.1 W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
     
 zad.2 Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
 
-     Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
+     egrep ^[0-9] pl*
      
 zad.3 Znajdź pliki, zawierające wiersz w którym na 9 pozycji występuje litera r.
 
@@ -106,5 +106,14 @@ zad.3 Znajdź pliki, zawierające wiersz w którym na 9 pozycji występuje liter
 zad.4 Policz, ilu użytkowników systemu używa powłoki bash (zgodnie z zapisami w pliku /etc/passwd).
 
     egrep /bin/bash$ /etc/passwd | wc -l
+    
+lub
+    grep -c bash /etc/passwd
+    
+po polepszeniu drugiej wersji
+
+    grep -c bash /etc/passwd
 
 zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
+
+    grep -c bash /etc/passwd
