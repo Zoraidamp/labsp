@@ -116,4 +116,5 @@ po polepszeniu drugiej wersji
 
 zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
 
-    grep -c bash /etc/passwd
+    egrep ^[IVXMCDL] *
+
