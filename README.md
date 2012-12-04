@@ -105,6 +105,6 @@ zad.3 Znajdź pliki, zawierające wiersz w którym na 9 pozycji występuje liter
 
 zad.4 Policz, ilu użytkowników systemu używa powłoki bash (zgodnie z zapisami w pliku /etc/passwd).
 
-
+    egrep /bin/bash$ /etc/passwd | wc -l
 
 zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
