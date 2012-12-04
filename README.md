@@ -117,4 +117,4 @@ po polepszeniu drugiej wersji
 zad.5 Znajdź wiersze zawierające liczby rzymskie w pliku plik.txt.
 
     egrep -iw ^[IVXMCDL]+ plik.txt
-
+    
