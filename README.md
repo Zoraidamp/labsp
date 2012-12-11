@@ -123,5 +123,41 @@ lab 7 skrypty
 
 zad.1 W bieżącym katalogu zamienić rozszerzenia wszystkich plików z rozszerzeniem htm na html. Jeżeli w nazwie pliku istnieje spacja, to należy zamienić ją na znak podkreślenia.
 
-    chmod +x rename.sh 
+    chmod +x rename2.sh 
+    
+    #!/bin/bash
+    #!/bin/bash
+    # zmiana plikow .hm na .html
+    # jesli sa spacje zmienia je na znak _
+
+    number=0
+    FOUND=0
+
+    for filename in *.htm
+    do
+    echo "$filename" | grep -q ".htm$"
+    if [ $? -eq $FOUND ]
+    then
+    fname=$filename
+    n=$(echo $fname | sed -e "s/.htm/.html/g")
+    mv "$fname" "$n"
+    let "number += 1"
+    fi
+    done
+    numer=0
+     znal=0
+    for filename in *.html
+    do
+    echo "$filename" | grep -q " "
+    if [ $? -eq $znal ]
+    then
+    nazwa=$filename
+    nowa=$(echo $nazwa | sed -e "s/ /_/g")
+    mv "$nazwa" "$nowa"
+    let "numer += 1"
+    fi
+    done
+    echo "Rozszerzenie zmienione $number razy, a spacje $numer razy"
+    exit 0
+
     
