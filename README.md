@@ -160,5 +160,28 @@ zad.1 W bieżącym katalogu zamienić rozszerzenia wszystkich plików z rozszerz
     done
     echo "Rozszerzenie zmienione $number razy, a spacje $numer razy"
     exit 0
-
     
+zad.2 Napisać skrypt zawierający funkcję obliczającą silnię. Następnie należy obliczyć silnię z liczby, która jest argumentem skryptu. W przypadku niepoprawnego argumentu należy wypisać odpowiedni komunikat.
+
+    #!/bin/bash
+    #liczy silnie
+    if [ "$1" == "" ]
+    then
+      echo "Użycie skryptu $0 błędne. Prawdopodbnie nie podałes argumentu"
+      exit 1
+    fi
+    silnia() {
+      s=1
+      N=$1
+      while [ $N -ge 1 ]
+      do
+        s=$[$s * $N]
+        N=$[$N - 1]
+      done
+      echo $s
+    }
+      silnia $1
+      sil='silnia $1'
+      echo 'Silnia = ' $sil
+
+    ./silnia.sh 'argument'
