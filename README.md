@@ -125,6 +125,7 @@ zad.1 W bieżącym katalogu zamienić rozszerzenia wszystkich plików z rozszerz
 
     chmod +x rename2.sh 
     
+    
     #!/bin/bash
     #!/bin/bash
     # zmiana plikow .hm na .html
